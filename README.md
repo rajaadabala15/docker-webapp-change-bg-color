@@ -13,7 +13,7 @@ cd docker-webapp-change-bg-color
 
 docker build -t webapp-change-bg-color .
 
-## How to run from docker image
+## How to run using docker image
 * with default color
 docker run --rm -d -p8081:80 --name webapp1 webapp-change-bg-color
 * change color
