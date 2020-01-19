@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Change bg color</title>
+	<style>
+		body {
+			background-color: {% if bgColor %} {{bgColor}} {% else %} red {% endif %}
+		}
+
+		.center p {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size:200%;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p>
+			The background color of this page is: <b>{% if bgColor %} {{bgColor}} {% else %} red {% endif %}</b>
+		</p>
+	</div>
+</body>
+</html>
