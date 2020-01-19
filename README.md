@@ -1,17 +1,17 @@
 
-#docker-webapp-change-bg-color
+# docker-webapp-change-bg-color
 
-##Author
+## Author
 Raja Adabala
 This is a docker web app designed using python flask to change the background color of the page
 
-##How to build image from github source
+## How to build image from github source
 
 cd docker-webapp-change-bg-color
 
 docker build -t webapp-change-bg-color .
 
-##How to run from docker image
+## How to run from docker image
 * with default color
 docker run --rm -d -p8081:80 --name webapp1 webapp-change-bg-color
 * change color
